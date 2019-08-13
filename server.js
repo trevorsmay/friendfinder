@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.text());
 
 require("./app/routing/apiRoute.js")(app);
-require("./routing/htmlRoute.js")(app);
+require("./app/routing/htmlRoutes.js")(app);
 
 //path.join(__dirname, 
 //path.join(__dirname, 
@@ -20,3 +20,4 @@ require("./routing/htmlRoute.js")(app);
 app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
 });
+ 
